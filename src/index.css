@@ -27,7 +27,7 @@
 }
 
 .Header {
-  z-index: 99;
+  z-index: 9;
   position: sticky;
   top: 0;
   box-shadow: 0 0 50px -20px rgba(26, 155, 0, 0.575);

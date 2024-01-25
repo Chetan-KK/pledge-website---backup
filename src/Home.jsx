@@ -16,6 +16,11 @@ const Home = () => {
 
   return (
     <div className="bg-sky-200 h-full min-h-screen flex flex-col justify-between">
+      {/*  */}
+      <div className="flex text-white font-bold bg-black fixed z-40 justify-center items-center top-0 left-0 h-screen w-screen">
+        Link will open on 26/01/2024 at 8am
+      </div>
+      {/*  */}
       <header className="">
         <div className="Header flex">
           <div className="clg_logo_wrapper">
