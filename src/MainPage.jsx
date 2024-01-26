@@ -119,6 +119,9 @@ const MainPage = () => {
       >
         Loading…
       </iframe>
+      <h1 className="text-sm text-red-600 text-center mt-3 font-bold">
+        form is mandatory *
+      </h1>
       <div className="flex justify-center items-center flex-col  mt-4">
         {active ? (
           <Link to={"/thankyou"}>
