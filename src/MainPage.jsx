@@ -12,10 +12,12 @@ const MainPage = () => {
   const [formLoad, setFormLoad] = useState(false);
 
   const getData = () => {
-    counter.get("pledgeCountAdypuSoe", "pledgeCountAdypuSoe").then((res) => {
-      console.log(res);
-      setMainCount(res.Count);
-    });
+    counter
+      .get("pledgeCounterAdypuSoe", "pledgeCounterAdypuSoe")
+      .then((res) => {
+        console.log(res);
+        setMainCount(res.Count);
+      });
   };
 
   useEffect(() => {
@@ -25,7 +27,7 @@ const MainPage = () => {
   function HandleClick() {
     setfActive(true);
     setActive(false);
-    counter.up("pledgeCountAdypuSoe", "pledgeCountAdypuSoe").then(() => {
+    counter.up("pledgeCounterAdypuSoe", "pledgeCounterAdypuSoe").then(() => {
       setMainCount((prev) => prev + 1);
     });
   }

@@ -5,9 +5,11 @@ const ThankYou = () => {
   const counter = new CounterAPI();
   const [mainCount, setMainCount] = useState(0);
   const getData = () => {
-    counter.get("pledgeCountAdypuSoe", "pledgeCountAdypuSoe").then((res) => {
-      setMainCount(res.Count);
-    });
+    counter
+      .get("pledgeCounterAdypuSoe", "pledgeCounterAdypuSoe")
+      .then((res) => {
+        setMainCount(res.Count);
+      });
   };
 
   useEffect(() => {
